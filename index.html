@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Report</title>
+    <title>Responsive Gym Report</title>
     <style>
         body {
             margin: 0;
@@ -16,9 +16,9 @@
         }
         .container {
             width: 100%;
-            max-width: 1140px;
+            max-width: 1024px;
             height: 0;
-            padding-bottom: 47.5%;
+            padding-bottom: 59.765625%; /* (612/1024)*100 to maintain the aspect ratio */
             position: relative;
         }
         iframe {
@@ -29,11 +29,21 @@
             height: 100%;
             border: none;
         }
+        @media (max-width: 768px) {
+            .container {
+                padding-bottom: 75%; /* Adjust aspect ratio for smaller screens */
+            }
+        }
+        @media (max-width: 480px) {
+            .container {
+                padding-bottom: 100%; /* Adjust aspect ratio for very small screens */
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-       <iframe title="NIECEDemo" width="600" height="373.5" src="https://app.fabric.microsoft.com/view?r=eyJrIjoiNDFlYmMwZDgtMjExZC00YWVhLTliMDYtYTZmZmUwMTdkZWU3IiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9" frameborder="0" allowFullScreen="true"></iframe>
+        <iframe title="gym" src="https://app.fabric.microsoft.com/view?r=eyJrIjoiZTQyZjM4NGUtYmQ2YS00MDQzLTkwMzUtNDIyNGEyODQ3ZmI3IiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9" allowFullScreen="true"></iframe>
     </div>
 </body>
 </html>
