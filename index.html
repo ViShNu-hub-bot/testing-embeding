@@ -3,57 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Adidas Report</title>
+    <title>Dashboard Display</title>
     <style>
         body {
-            margin: 0;
-            font-family: Arial, sans-serif;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
-            background-color: #f0f0f0;
-            text-align: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
         }
-        h1 {
-            color: #DC143C; /* Crimson color */
-            margin-bottom: 20px;
-        }
-        .container {
-            width: 100%;
-            max-width: 600px;
-            height: 0;
-            padding-bottom: 33.52%; /* (373.5/600)*100 to maintain the aspect ratio */
-            position: relative;
-            background-color: #1E90FF; /* DodgerBlue color */
-            border: 2px solid #DC143C; /* Crimson color border */
+        .dashboard-container {
+            width: 80%;
+            max-width: 800px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
+            overflow: hidden;
         }
         iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
             width: 100%;
-            height: 100%;
+            height: 80vh;
             border: none;
-        }
-        @media (max-width: 768px) {
-            .container {
-                padding-bottom: 80%; /* Adjust aspect ratio for smaller screens */
-            }
-        }
-        @media (max-width: 480px) {
-            .container {
-                padding-bottom: 100%; /* Adjust aspect ratio for very small screens */
-            }
         }
     </style>
 </head>
 <body>
-    <h1>Kasadara Test Embedding</h1>
-    <div class="container">
-        <iframe title="adidas" src="https://app.fabric.microsoft.com/view?r=eyJrIjoiYmVjODk4OGMtMzE0YS00Yjc5LWFjNzEtOTJlMGExMGY4MmRkIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9" allowFullScreen="true"></iframe>
+    <div class="dashboard-container">
+        <iframe title="NIECEDemo" src="https://app.fabric.microsoft.com/view?r=eyJrIjoiNDFlYmMwZDgtMjExZC00YWVhLTliMDYtYTZmZmUwMTdkZWU3IiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9" allowFullScreen="true"></iframe>
     </div>
 </body>
 </html>
